@@ -1,18 +1,18 @@
 const zod= require("zod");
 
 const createTodoSchema = zod.object({
-    title: string(),
+    title: zod.string(),
     description: zod.string()
 })
 
 const completedTodoSchema = zod.object({
-    id:string(),
+    id: zod.string(),
 });
 
 module.exports = {
-    createTodo: createTodo,
-    updateTodo : updateTodo
-}
+    createTodoSchema,
+    completedTodoSchema
+};
 
 /*
     
