@@ -16,7 +16,7 @@ app.post("/todo", (req,res)=>{
 })
 
 app.get("/todos", (req,res)=>{
-
+    
 })
 
 app.put("/completed", (req,res)=>{
