@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 mongoose.connect("//mongodb+srv://rajdeeprudra2003:03UO1bWnfoihLnfS@cluster1.rohap8k.mongodb.net/");
 const todoSchema =mongoose.Schema({
-    Title: string,
+    title: string,
     description: string,
-    Completed : boolean
+    completed : boolean
 
 })
 
